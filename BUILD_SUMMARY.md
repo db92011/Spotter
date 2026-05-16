@@ -24,6 +24,7 @@ Prototype features:
 - emergency guidance
 - concern mode picker
 - SayIt-style parent scripts
+- split-family / divorced parent documentation lane
 - Local Safety Map / Local Help Packet preview
 - timeline/evidence packet surface
 - `$5/month` paid package positioning
@@ -55,8 +56,26 @@ Recommended paid plan:
 $5/month or annual equivalent
 ```
 
+Spotter is paid-only. There is no free version.
+
+Primary CTA:
+
+```text
+Get Started - $5/month
+```
+
+In the App Machine prototype, the CTA is wired to:
+
+```text
+VITE_STRIPE_CHECKOUT_URL
+```
+
 Paid value centers on:
 
+- month-to-month pattern comparison
+- parent-owned documentation that turns scattered signs into a clearer record
+- exportable proof packets for conversations with schools, platforms, therapists, CPS, law enforcement, or child advocacy professionals
+- neutral split-family documentation for divorced parents, co-parents, custody transitions, child behavior changes between homes, and signs a child is being used as a messenger, monitor, or spy
 - unlimited local safety packets
 - parent conversation scripts
 - saved localities
@@ -68,4 +87,3 @@ Paid value centers on:
 ## Next Build Move
 
 Keep shaping the phone-first experience inside Ionic App Machine until the parent flow feels real. Then port the proven shell into a standalone Spotter PWA runtime.
-

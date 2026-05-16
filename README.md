@@ -91,6 +91,8 @@ Assets copied from the old `Spot` folder live in `assets/`.
 - Something feels wrong
 - My child is hiding something
 - My child may be getting groomed
+- My child is struggling between split homes
+- I am a divorced or co-parenting parent trying to document concerns fairly
 - My child may be isolated or radicalized
 - My child may be suicidal
 - My child was threatened or blackmailed online
@@ -167,6 +169,42 @@ Spotter should return official/local resources such as:
 - Childhelp hotline as a national fallback
 - 988 for suicide or emotional crisis support in the U.S.
 
+## Split-Family / Divorced Parent Lane
+
+Spotter should include a structured path for divorced parents, co-parents, guardians, and split-family situations.
+
+This lane should help parents document without escalating conflict or coaching the child.
+
+Common concern patterns:
+
+- custody exchange distress
+- sudden fear or shutdown before or after visits
+- pressure to keep secrets between homes
+- a child being asked to report, spy, monitor, or carry information about the other parent
+- a child being used as a messenger between adults
+- loyalty binds or being asked to choose sides
+- inconsistent stories that need careful tracking
+- bullying or sibling conflict across split households
+- online contact or device issues between homes
+- school behavior changes after transitions
+- unsafe supervision concerns
+- documentation needed for therapists, schools, mediators, attorneys, CPS, or court-adjacent professionals
+
+Parent guidance should stay neutral and factual:
+
+- record dates, times, locations, and exact child statements
+- record exact requests made of the child, such as questions they were told to ask or information they were told to gather
+- separate direct observation from interpretation
+- avoid leading questions
+- avoid using Spotter to coach a child against another parent
+- focus on safety, stability, and documentation
+
+Example script:
+
+```text
+You do not have to report on either home. I just want to understand how you are feeling and whether anything feels unsafe or confusing.
+```
+
 ## Billable Shape
 
 Recommended price:
@@ -175,16 +213,13 @@ Recommended price:
 $5/month or annual equivalent
 ```
 
-Free:
-
-- national emergency guidance
-- basic red-flag education
-- Childhelp / 988 / emergency reminders
-- one local lookup preview
-- one private note
+Spotter is paid-only. There is no free version.
 
 Paid:
 
+- month-to-month pattern comparison
+- parent-owned documentation that turns scattered signs into a clearer record
+- exportable proof packets for conversations with schools, platforms, therapists, CPS, law enforcement, or child advocacy professionals
 - unlimited local safety packets
 - saved localities
 - printable who-to-contact PDF
@@ -194,6 +229,18 @@ Paid:
 - evidence packet support
 - local resource update checks
 - multiple protected cases later
+
+Primary CTA:
+
+```text
+Get Started - $5/month
+```
+
+The CTA should send the parent directly to Stripe checkout. In the App Machine prototype, this is controlled by:
+
+```text
+VITE_STRIPE_CHECKOUT_URL
+```
 
 Billable promise:
 
@@ -239,4 +286,3 @@ The previous source folders have been consolidated here:
 - `source-imports/ME_SPOTTER_IDEA_README.md`
 
 The old `Spot` folder and `Idea Bank/Me` folder are no longer the canonical product homes after this consolidation.
-
