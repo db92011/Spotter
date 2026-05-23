@@ -46,38 +46,42 @@ if (isStandalone) {
   installedState.hidden = false;
   installAction.textContent = "Continue to Spotter";
 } else if (isIOS && isSafari) {
-  installAction.textContent = "Show iPhone install steps";
+  installAction.textContent = "Install Spotter on this iPhone";
 } else if (isIOS) {
-  installAction.textContent = "Open this page in Safari";
+  installAction.textContent = "Open in Safari on this iPhone";
 } else if (isDesktopSafari) {
-  installAction.textContent = "Show Mac install steps";
+  installAction.textContent = "Show phone install steps";
+} else if (isAndroid) {
+  installAction.textContent = "Install Spotter on this phone";
+} else {
+  installAction.textContent = "Show phone install steps";
 }
 
 function setGuide(kind) {
   if (kind === "mac") {
-    sheetEyebrow.textContent = "Mac install";
-    sheetTitle.textContent = "Add Spotter to the Dock";
-    stepOne.textContent = "Open this installer page in Safari on your Mac.";
-    stepTwo.textContent = "Use File > Add to Dock from the Safari menu bar.";
-    stepThree.textContent = "Click Add. Then launch Spotter from the Dock or Applications.";
+    sheetEyebrow.textContent = "Mobile install";
+    sheetTitle.textContent = "Install from your phone";
+    stepOne.textContent = "Open this same Spotter page on your iPhone or Android phone.";
+    stepTwo.textContent = "Install directly from the phone browser: Share > Add to Home Screen on iPhone, or Install app / Add to Home screen on Android.";
+    stepThree.textContent = "Launch Spotter from the new phone icon.";
     return;
   }
 
   if (kind === "android") {
     sheetEyebrow.textContent = "Android install";
-    sheetTitle.textContent = "Install Spotter";
+    sheetTitle.textContent = "Install Spotter on this phone";
     stepOne.textContent = "Tap the browser menu or the install prompt when it appears.";
     stepTwo.textContent = "Choose Install app or Add to Home screen.";
-    stepThree.textContent = "Tap Install. Then launch Spotter from the new app icon.";
+    stepThree.textContent = "Tap Install. Then launch Spotter from the new phone icon.";
     return;
   }
 
   if (kind === "desktop") {
-    sheetEyebrow.textContent = "Desktop install";
-    sheetTitle.textContent = "Install Spotter";
-    stepOne.textContent = "Use the install icon in the address bar, or open the browser app menu.";
-    stepTwo.textContent = "Choose Install Spotter, Install this site as an app, or Add to Dock.";
-    stepThree.textContent = "Open Spotter from the new app icon. It will launch the app shell.";
+    sheetEyebrow.textContent = "Mobile install";
+    sheetTitle.textContent = "Install from your phone";
+    stepOne.textContent = "Go to this same Spotter site on your phone.";
+    stepTwo.textContent = "Tap Install Spotter on this phone.";
+    stepThree.textContent = "Add it to your Home Screen, then open Spotter from the phone icon.";
     return;
   }
 
@@ -85,7 +89,7 @@ function setGuide(kind) {
   sheetTitle.textContent = "Add Spotter to Home Screen";
   stepOne.textContent = "Open this installer page in Safari.";
   stepTwo.textContent = "Tap Share, then choose Add to Home Screen.";
-  stepThree.textContent = "Tap Add. Then launch Spotter from the new Home Screen icon.";
+  stepThree.textContent = "Tap Add. Then launch Spotter from the new phone icon.";
 }
 
 function showDeviceGuide() {
@@ -107,7 +111,7 @@ function showDeviceGuide() {
 window.addEventListener("beforeinstallprompt", (event) => {
   event.preventDefault();
   deferredInstallPrompt = event;
-  installAction.textContent = "Install Spotter";
+  installAction.textContent = "Install Spotter on this phone";
 });
 
 installAction?.addEventListener("click", async () => {
@@ -124,7 +128,7 @@ installAction?.addEventListener("click", async () => {
   deferredInstallPrompt.prompt();
   await deferredInstallPrompt.userChoice;
   deferredInstallPrompt = null;
-  installAction.textContent = "Install requested";
+  installAction.textContent = "Phone install requested";
 });
 
 closeSheet?.addEventListener("click", () => {

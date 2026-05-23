@@ -30,6 +30,7 @@
   </head>
   <body>
     <div id="root"></div>
+    <script src="/app/mobile-access-patch.js"></script>
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("/app/service-worker.js", { scope: "/app/" }).catch(function () {});

@@ -14,6 +14,7 @@ const requiredFiles = [
   "site/sw.js",
   "site/app/index.html",
   "site/app/manifest.json",
+  "site/app/mobile-access-patch.js",
   "site/app/service-worker.js",
   "site/app/install/index.html",
   "site/app/install/install.js",
