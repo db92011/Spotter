@@ -9,16 +9,20 @@ Spotter is the consolidated parent-facing protection program replacing the earli
 - Canonical product folder: `/Users/dannybrooking/Documents/GitHub = master copy/Spotter`
 - Source notes preserved in: `source-imports/`
 - Icon assets copied into: `assets/`
-- App Machine prototype lives in: `/Users/dannybrooking/Documents/GitHub = master copy/app-machine/App Machine CTP app project template/ctp-ionic-app-machine`
+- Standalone PWA runtime lives in: `site/`
+- Cloudflare Pages output directory: `site`
 
-## App Machine Prototype
+## Standalone PWA Surface
 
-The current Ionic App Machine prototype uses:
+The current deployable surface uses:
 
-- `src/pages/Home.tsx`
-- `src/pages/Home.css`
+- `site/index.html`
+- `site/app/index.html`
+- `site/app/install/index.html`
+- `site/site.webmanifest`
+- `site/sw.js`
 
-Prototype features:
+Runtime features:
 
 - parent-facing hero
 - emergency guidance
@@ -64,11 +68,8 @@ Primary CTA:
 Get Started - $5/month
 ```
 
-In the App Machine prototype, the CTA is wired to:
+In the app runtime, Stripe access is wired through the embedded Spotter account modal and checkout URL.
 
-```text
-VITE_STRIPE_CHECKOUT_URL
-```
 
 Paid value centers on:
 
@@ -84,6 +85,12 @@ Paid value centers on:
 - evidence packet support
 - timeline builder
 
-## Next Build Move
+## Deployment Path
 
-Keep shaping the phone-first experience inside Ionic App Machine until the parent flow feels real. Then port the proven shell into a standalone Spotter PWA runtime.
+Spotter should flow through one visible path:
+
+```text
+VS Code -> GitHub Spotter repo -> Cloudflare Pages spotter project
+```
+
+Do not hide the live Spotter runtime inside another project as the only source of truth.

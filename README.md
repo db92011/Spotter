@@ -45,31 +45,35 @@ Use:
 - "Local Help Packet"
 - "Owner/parent-controlled evidence packet"
 
-## App Machine Posture
+## Shipping Surface
 
-Spotter is currently being shaped inside the Ionic App Machine shell:
-
-```text
-/Users/dannybrooking/Documents/GitHub = master copy/app-machine/App Machine CTP app project template/ctp-ionic-app-machine
-```
-
-The App Machine prototype currently lives in:
+Spotter now ships from this top-level folder as its own static PWA runtime.
 
 ```text
-src/pages/Home.tsx
-src/pages/Home.css
+site/
 ```
 
-Use App Machine for:
+The app shell lives in:
 
-- phone-first Ionic shell shaping
-- parent workflow prototype
-- mode picker patterns
-- SayIt-style conversation surfaces
-- local packet preview
-- timeline/evidence surface
+```text
+site/app/
+```
 
-When proven, Spotter can be ported into its own standalone PWA runtime under this `Spotter` folder.
+The marketing and install front door lives in:
+
+```text
+site/index.html
+site/app/install/
+```
+
+This folder is the VS Code to GitHub to Cloudflare path for Spotter. The Circle site can still market Spotter at `circlethepeople.com/spotter/`, but the standalone app surface belongs here.
+
+Useful commands:
+
+```bash
+npm run build
+npm run deploy
+```
 
 ## Icon Direction
 

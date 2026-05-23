@@ -1,0 +1,13 @@
+{
+  "name": "spotter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/verify-static-site.mjs",
+    "deploy": "wrangler pages deploy site --project-name=spotter"
+  },
+  "devDependencies": {
+    "wrangler": "^4.69.0"
+  }
+}
