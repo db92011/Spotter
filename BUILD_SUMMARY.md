@@ -11,6 +11,8 @@ Spotter is the consolidated parent-facing protection program replacing the earli
 - Icon assets copied into: `assets/`
 - Standalone PWA runtime lives in: `site/`
 - Cloudflare Pages output directory: `site`
+- Cloudflare Pages project: `spotter`
+- Current Pages URL: `https://spotter-2po.pages.dev/`
 
 ## Standalone PWA Surface
 
