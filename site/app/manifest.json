@@ -1,6 +1,7 @@
 {
   "short_name": "Spotter",
   "name": "Spotter Parent Tool",
+  "description": "Spotter helps parents notice changes, talk calmly, document concerns, and keep a parent-owned record.",
   "icons": [
     {
       "src": "/app/icons/icon-192.png",
@@ -18,6 +19,22 @@
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/screenshots/spotter-install-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Spotter install surface"
+    },
+    {
+      "src": "/assets/screenshots/spotter-app-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Spotter app surface"
     }
   ],
   "start_url": "/app/",
