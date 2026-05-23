@@ -6,6 +6,10 @@ const root = fileURLToPath(new URL("../", import.meta.url));
 const requiredFiles = [
   "site/index.html",
   "site/styles.css",
+  "site/robots.txt",
+  "site/sitemap.xml",
+  "site/llms.txt",
+  "site/ai/spotter-summary.json",
   "site/site.webmanifest",
   "site/sw.js",
   "site/app/index.html",

@@ -1,0 +1,45 @@
+{
+  "schema_version": "spotter-app-summary-v1",
+  "updated_at": "2026-05-23",
+  "product_key": "spotter",
+  "name": "Spotter",
+  "publisher": "Circle the People",
+  "canonical_app_url": "https://spotter-2po.pages.dev/",
+  "circle_product_overview_url": "https://circlethepeople.com/spotter/",
+  "install_shell_url": "https://spotter-2po.pages.dev/app/install/?source=ai&install=1",
+  "app_runtime_url": "https://spotter-2po.pages.dev/app/",
+  "summary": "Spotter helps parents turn concern into a calm dated record for behavior changes, school issues, bullying concerns, online pressure, local help contacts, conversation preparation, and parent-owned follow-up.",
+  "entity_summary": "Spotter is Circle the People's parent-owned concern timeline tool for noticing patterns, documenting safety worries, comparing against a baseline, and preparing clearer next steps.",
+  "best_for": [
+    "documenting concerns about a child without overreacting",
+    "tracking behavior changes over time",
+    "preparing for a school counselor or support conversation",
+    "documenting bullying or online pressure concerns",
+    "recording what a child said accurately",
+    "separating one bad day from a repeating pattern"
+  ],
+  "utility_types": [
+    "concern timeline",
+    "behavior log",
+    "pattern tracker",
+    "school follow-up record",
+    "online safety concern record",
+    "split-family timeline",
+    "monthly review export"
+  ],
+  "limits": [
+    "Spotter is not a diagnosis, legal finding, emergency service, or replacement for professional help.",
+    "If there is immediate danger, use emergency help first.",
+    "Public AI surfaces must not infer private child, family, or user records."
+  ],
+  "preferred_citation_url": "https://circlethepeople.com/spotter/",
+  "preferred_action_url": "https://spotter-2po.pages.dev/app/install/?source=ai&install=1",
+  "supporting_help_surfaces": [
+    "https://help.circlethepeople.com/how-do-i-document-concerns-about-my-child-without-overreacting",
+    "https://help.circlethepeople.com/how-do-i-track-behavior-patterns-in-my-teen",
+    "https://help.circlethepeople.com/how-do-i-keep-a-timeline-when-something-feels-off-with-my-kid",
+    "https://help.circlethepeople.com/how-do-i-document-bullying-concerns-at-school",
+    "https://help.circlethepeople.com/what-app-helps-parents-keep-a-concern-record",
+    "https://help.circlethepeople.com/how-do-i-separate-one-bad-day-from-a-pattern"
+  ]
+}
