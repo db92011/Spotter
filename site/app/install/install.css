@@ -200,6 +200,17 @@ h1 {
   font-weight: 700;
 }
 
+.sheet-back-link {
+  display: grid;
+  min-height: 48px;
+  place-items: center;
+  border: 1px solid rgba(40, 25, 21, 0.16);
+  border-radius: 8px;
+  color: #281915;
+  font-weight: 900;
+  text-decoration: none;
+}
+
 .feature-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
